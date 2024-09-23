@@ -8,31 +8,25 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-  <a href="https://www.aeswellclinic.com/acne-away" target="_blank" class="google-button">
-    <span class="material-symbols-outlined">
-        arrow_outward
-    </span>
+ 
+  <a href="https://www.aeswellclinic.com/acne-away" target="_blank" id="fullPageLink">
+   
+    <div class="google-button">
+      <span class="material-symbols-outlined">
+          arrow_outward
+      </span>
+    </div>
   </a>
 
   <script>
-   
-    document.addEventListener('mouseover', function() {
-      const button = document.querySelector('.google-button');
-      button.classList.add('active');
+  
+    document.body.addEventListener('mouseover', function() {
+      document.body.style.cursor = "pointer";
     });
 
-    
-    document.addEventListener('mouseout', function() {
-      const button = document.querySelector('.google-button');
-      button.classList.remove('active');
-    });
-
-   
+ 
     document.body.addEventListener('click', function(event) {
-   
-      if (!event.target.closest('.google-button')) {
-        window.location.href = "https://www.aeswellclinic.com/acne-away";
-      }
+      window.location.href = "https://www.aeswellclinic.com/acne-away";
     });
   </script>
 </body>
